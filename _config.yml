@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: Tyler Goza's Blog
+subtitle: Just a personal blog
 description:
-author: John Doe
-language:
-timezone:
+author: Tyler Goza
+language: en
+timezone: America/Chicago
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://blog.tylergoza.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -68,5 +68,6 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: heroku
-  repo: https://git.heroku.com/blog-tylergoza-com.git
+  type: aws-s3
+  region: 'us-east-1'
+  bucket: blog.tylergoza.com
